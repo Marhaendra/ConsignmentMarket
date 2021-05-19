@@ -19,7 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/market','MarketApiController@daftarmarket');
-Route::post('/market','MarketApiController@store')->name('market.store');
+Route::post('/market','MarketApiController@store');
 Route::put('/market/{id}','MarketController@update');
 Route::delete('/market/{id}','MarketController@destroy');
 
